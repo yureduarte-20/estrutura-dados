@@ -23,6 +23,9 @@ export class List <T> {
             currentEl = currentEl.next 
         }
     }
+    public size(){
+        return this._index + 1
+    }
     public deleteByIndex(index : number){
         const floorIndex = Math.floor(index);
         if( floorIndex > this._index || index <= -1 || !this._head)

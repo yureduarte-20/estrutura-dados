@@ -7,4 +7,7 @@ for(let number of elements){
     list.push(number);
 }
 list.show();
+console.log("size: ", list.size())
+list.deleteByIndex( 4 )
 list.show()
+console.log("size: ", list.size())
