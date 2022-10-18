@@ -29,6 +29,7 @@ export class List <T> {
             throw new RangeError("Elemento não existente")
         if(floorIndex == 0){
             this._head = this._head.next
+            this._index--
             return
         }
         let tempIndex = 0;
@@ -42,6 +43,7 @@ export class List <T> {
         if(predecessor && predecessor.next){
             predecessor.next = currentElement?.next 
         }
+        this._index--;
         
     }
 }
