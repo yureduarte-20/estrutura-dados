@@ -3,4 +3,4 @@ npm i typescript -D
 npx tsc --init
 npm i ts-node nodemon -D
 npm i eslint -D
-npx eslint –init
+npx eslint --init
